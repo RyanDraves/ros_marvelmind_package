@@ -174,5 +174,5 @@ void stopMarvelmindHedge (struct MarvelmindHedge * hedge);
 #ifdef WIN32
 #define DEFAULT_TTY_FILENAME "\\\\.\\COM3"
 #else
-#define DEFAULT_TTY_FILENAME "/dev/ttyACM0"
+#define DEFAULT_TTY_FILENAME "/dev/marvelmind"  // This is our only change, which requires a udev rule
 #endif // WIN32
